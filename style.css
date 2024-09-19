@@ -114,6 +114,7 @@ html{
     align-items: center;
     gap: 1rem;
     min-height: 50%;
+    margin: auto;
 }
 
 
@@ -276,6 +277,136 @@ html{
 .divisar{
     font-weight: 800;
 }
+
+
+.tipos-dolar{
+    height: 100vh;
+    background-color: #00dd978e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cardSection{
+    background-color: white;
+    width: 70%;
+    height: 40rem;
+    border-radius: 20px;
+    display: flex;
+}
+
+.nav-bar{
+    box-sizing: border-box;
+    min-width: 30%;
+    background-color: #84f3d045;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 0 20px 20px 20px;
+    gap: 12px;
+}
+
+.nav-bar h4{
+    font-size: 1.6rem;
+    padding: 20px 0 0 0;
+    color: #087c57;
+}
+
+.nav-bar ul li{
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+}
+
+.explication{
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.explication h3{
+    font-size: 3rem;
+}
+
+.explication p{
+    font-size: 1.2rem;
+}
+
+.element-list.active{
+    background-color:#00dd9727;
+    transition: .2s all;
+}
+
+
+footer{
+    height: 10rem;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container-footer{
+    display: flex;
+}
+
+.descargo h5{
+    font-size: 1.5rem;
+}
+
+.descargo .ar{
+    color: #00DD98;
+}
+
+.descargo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.agradecimientos{
+    padding: 2rem;
+    border-left: 1px solid white;
+}
+
+.agradecimientos a{
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:790px) {
     .imag img{

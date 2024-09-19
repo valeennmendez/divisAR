@@ -6,6 +6,8 @@
     <title>DivisAR</title>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +20,7 @@
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#divisas">Divisas</a></li>
             <li><a href="#quienesomos">¿Qué somos?</a></li>
-            <li><a href="#">Dolar</a></li>
+            <li><a href="#dolar">Dolar</a></li>
         </ul>
     </nav>
     <div class="container" id="inicio">
@@ -72,6 +74,50 @@
             <img src="edited.jpg" alt="">
         </div> 
     </div>
+
+    <div class="tipos-dolar" id="dolar">
+        <div class="cardSection">
+            <div class="nav-bar">
+                <h4 class="element-list" data-page="explicacion" id="title-type" style="cursor: pointer;">Tipos de Dolar</h4>
+                <ul>
+                    <li class="element-list" data-page="oficial"><span class="material-symbols-outlined">account_balance</span>Dolar Oficial</li>
+                    <li class="element-list" data-page="blue"><span class="material-symbols-outlined">lock</span>Dolar Blue</li>
+                    <li class="element-list" data-page="mep"><span class="material-symbols-outlined">paid</span>Dolar MEP </li>
+                    <li class="element-list" data-page="ccl"><span class="material-symbols-outlined">database</span>Dolar Contado con Liquidación</li>
+                    <li class="element-list" data-page="tarjeta"> <span class="material-symbols-outlined">credit_card</span>Dolar Tarjeta</li>
+                    <li class="element-list"data-page="cripto"><span class="material-symbols-outlined">currency_bitcoin</span>Dolar Cripto </li>
+                    <li class="element-list" data-page="mayorista"><span class="material-symbols-outlined">business_center</span>Dolar Mayorista</li>
+                </ul>
+            </div>
+            <div class="explication" id="content">
+                <h3>¿Por qué hay distintos tipos de Dólar?</h3>
+                <p>En Argentina existen diferentes tipos de dolar debido a las 
+                    complejas políticas económicas y monetarias del pais. Esto ha
+                    llevado a la implementación de distintos tipos de cambio para
+                    regular la compra y venta de divisas según su uso y destino.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="descargo">
+                <h5>Divis<span class="ar">AR</span></h5>
+                <p>
+                    Este es un proyecto personal en el que no me responsabilizo por posibles errores en la información sobre
+                    los precios de las divisas mostradas en esta página.
+                </p>
+            </div>
+            <div class="agradecimientos">
+                <p>
+                    Los datos mostrados provienen de <a href="https://dolarapi.com/">Dolar API</a>, un proyecto de código abierto que ofrece información de fuentes públicas.
+                    Te recomiendo revisar los <a href="https://dolarapi.com/docs/legal.html">avisos legales</a> del proyecto para más detalles.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
 
     <script src="https://kit.fontawesome.com/a8b1c63967.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>

@@ -226,6 +226,60 @@ function formatearFecha(fechaISO) {
     return `${dia}/${mes}/${año} ${horas}:${minutos}`;
 }
 
+function activeList(){
+    const element = document.querySelectorAll(".element-list")
+    const title = document.getElementById("title-type")
+    
+    element.forEach(li =>{
+        li.addEventListener("click", function(e){
+
+            if(e.target === title){
+                return;
+            }
+
+            element.forEach(el => el.classList.remove("active"));
+
+            li.classList.add("active")
+        })
+    })
+
+}
+
+
+function loadPage(page){
+    fetch(`${page}.html`)
+        .then(response => response.text())
+        .then(data =>{
+            document.getElementById("content").innerHTML = data;
+        })
+        .catch(error => console.error("Error al cargar la pagina: ", error));
+}
+
+
+function spa(){
+    document.querySelectorAll(".element-list").forEach(item =>{
+        item.addEventListener("click", e =>{
+            const page = item.getAttribute('data-page');
+            loadPage(page);
+        })
+    })
+
+    window.addEventListener("popstate", function(){
+        const page = location.pathname.substring(1);
+        loadPage(page || "explicacion");
+    })
+
+}
+
+
 document.addEventListener("DOMContentLoaded", function(){
+    
+    const page = location.pathname.substring(1);
+    loadPage(page || "explicacion");
+
+    spa();
+    
     cargarDolares()
+
+    activeList()
 })
